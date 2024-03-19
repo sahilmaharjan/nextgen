@@ -1,6 +1,8 @@
 body {
   font-family: "Poppins", sans-serif;
   gap: 40px;
+  display: flex;
+  flex-direction: column;
 }
 
 .card-button {
@@ -54,4 +56,140 @@ body {
   line-height: 70px;
   letter-spacing: -3%;
   font-size: 45px;
+}
+
+.circular--square {
+  display: inline-block;
+  position: relative;
+  width: 75px;
+  height: 75px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: #2e3192 4px solid;
+}
+.card {
+  border: 0px !important;
+  gap: 30px;
+}
+.card-body {
+  padding: 0 !important;
+  min-height: 150px;
+}
+
+.profile-name {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.profile-description {
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  color: #747474;
+}
+
+.profile-message {
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 36px;
+}
+
+.grey-container {
+  margin-left: 60px;
+  margin-right: 60px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f8f8f8;
+  gap: 48px;
+}
+
+.news-article-description {
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  line-height: 20px;
+  font-weight: lighter;
+  color: #495057;
+}
+
+.article-title {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  line-height: 25px;
+  font-weight: 500px;
+  color: #212529;
+}
+
+#newsArticleContainer {
+  gap: 15px;
+  margin-top: 20px;
+}
+.news-article-card {
+  background-color: #f8f8f8;
+}
+.footer {
+  background-image: url("./images/footer_bg.png");
+  height: 477px;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+}
+.copy-right {
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#footerContainer {
+  gap: 55px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-top: 120px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.footer-content {
+  height: 200px;
+  width: 250px;
+}
+
+.footer-content-item {
+  font-size: 20px;
+  line-height: 150%;
+  font-weight: normal;
+}
+
+.circular--icon {
+  display: inline-block;
+  position: relative;
+  width: 34px;
+  height: 34px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.icon {
+  width: 32px; /* Adjust the size of the circle */
+  height: 32px; /* Adjust the size of the circle */
+  border-radius: 50%; /* Makes it a circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 16px; /* Adjust margin as needed */
+  background-color: #ffffff;
+}
+
+.icon img {
+  max-width: 80%; /* Adjust the size of the icon */
+  max-height: 80%; /* Adjust the size of the icon */
+}
+
+#socialSitesContainer {
+  margin-top: 33px;
 }
