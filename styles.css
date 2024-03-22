@@ -229,6 +229,11 @@ body {
   color: #2e3192;
   text-align: center;
 }
+.our-team-container {
+  gap: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
 
 @media (min-width: 992px) {
   #lessonCardContainer {
@@ -281,5 +286,12 @@ body {
     line-height: 70px;
     letter-spacing: -3%;
     font-size: 45px;
+  }
+  .our-team-container {
+    gap: 50px;
+    padding-right: 120px;
+    padding-left: 120px;
+    padding-bottom: 60px;
+    padding-top: 60px;
   }
 }
