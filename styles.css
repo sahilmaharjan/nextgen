@@ -45,6 +45,7 @@ body {
   letter-spacing: -0.7px !important;
   line-height: auto !important;
 }
+
 #eventSubTitle {
   font-size: 18px;
   font-weight: 700;
@@ -96,7 +97,6 @@ body {
 }
 .card-body {
   padding: 0 !important;
-  min-height: 150px;
 }
 
 #lessonCardContainer {
@@ -214,6 +214,61 @@ body {
   font-size: 14px;
 }
 
+#programContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+#cardTag {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.card-number {
+  border-radius: 8px;
+  width: 34px;
+  height: 32px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  color: #2e3192;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.card-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card-title {
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  margin-bottom: 0 !important;
+}
+
+.card-img {
+  height: 271px;
+}
+
+.card-text {
+  font-family: "Inter";
+  font-size: 14px;
+  line-height: 20px;
+}
+
 .icon {
   width: 32px; /* Adjust the size of the circle */
   height: 32px; /* Adjust the size of the circle */
@@ -284,6 +339,15 @@ body {
     font-size: 20px;
   }
 
+  #programContainer {
+    padding: 40px;
+    gap: 24px;
+  }
+
+  #programContainer--title {
+    height: 70px;
+  }
+
   #eventContainer {
     margin-left: 60px;
     margin-right: 60px;
@@ -297,6 +361,56 @@ body {
     display: flex;
     flex-direction: column;
   }
+
+  #cardTag {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .card-img {
+    height: 271px;
+  }
+
+  .card-number {
+    border-radius: 8px;
+    width: 34px;
+    height: 32px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    color: #2e3192;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 20px;
+    font-weight: 500;
+  }
+
+  .card-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .card-title {
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    margin-bottom: 0 !important;
+  }
+
+  .card-text {
+    font-family: inter;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
   .grey-container {
     margin-left: 60px;
     margin-right: 60px;
