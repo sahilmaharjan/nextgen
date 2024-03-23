@@ -27,39 +27,40 @@ body {
   width: 100%;
   background-color: #f8f9fb;
   color: #2e3192;
-  padding: 60px;
+  padding: 20px;
   border-radius: 24px;
-  gap: 101px;
+  gap: 40px;
   display: flex;
   flex-direction: column;
 }
 
+#eventTitleContainer {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 #eventTitle {
-  font-size: 45px;
-  font-weight: bold;
-  line-height: 70px;
-  letter-spacing: -3%;
+  font-size: 24px;
+  font-weight: bold !important;
+  letter-spacing: -0.7px !important;
+  line-height: auto !important;
 }
 #eventSubTitle {
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 #eventBody {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: 40px;
+  gap: 20px;
 }
-@media (min-width: 992px) {
-  #eventBody {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
-  }
-}
+
 #circleBorder {
-  width: 80px; /* Adjust the size as needed */
-  height: 80px; /* Same as width for a perfect circle */
+  min-width: 40px; /* Adjust the size as needed */
+  min-height: 40px; /* Same as width for a perfect circle */
+  max-width: 40px; /* Adjust the size as needed */
+  max-height: 40px;
   background-color: #ffffff;
   border: 2px solid #2e3192;
   border-radius: 50%;
@@ -73,6 +74,11 @@ body {
   letter-spacing: -3%;
   font-size: 24px;
   height: 36px;
+}
+
+.calendar-icons {
+  width: 20px;
+  height: 20px;
 }
 
 .circular--square {
@@ -197,6 +203,17 @@ body {
   border-radius: 50%;
 }
 
+#eventDate {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+#eventDesc {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+}
+
 .icon {
   width: 32px; /* Adjust the size of the circle */
   height: 32px; /* Adjust the size of the circle */
@@ -255,6 +272,18 @@ body {
     max-width: 408px;
     max-height: 273px;
   }
+
+  #eventDate {
+    font-size: 24px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+  }
+
+  #eventDesc {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+  }
+
   #eventContainer {
     margin-left: 60px;
     margin-right: 60px;
@@ -293,5 +322,46 @@ body {
     padding-left: 120px;
     padding-bottom: 60px;
     padding-top: 60px;
+  }
+
+  .calendar-icons {
+    width: 32px;
+    height: 32px;
+  }
+
+  #eventTitle {
+    font-size: 45px;
+    font-weight: bold;
+    line-height: 70px;
+    letter-spacing: -3%;
+    font-weight: bold;
+  }
+  #eventSubTitle {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  #eventContainer {
+    width: 100%;
+    background-color: #f8f9fb;
+    color: #2e3192;
+    padding: 60px;
+    border-radius: 24px;
+    gap: 101px;
+    display: flex;
+    flex-direction: column;
+  }
+  #eventBody {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+  #circleBorder {
+    min-width: 80px; /* Adjust the size as needed */
+    min-height: 80px; /* Same as width for a perfect circle */
+    max-width: 80px;
+    max-height: 80px;
+    background-color: #ffffff;
+    border: 2px solid #2e3192;
+    border-radius: 50%;
   }
 }
